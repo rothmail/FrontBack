@@ -1,9 +1,23 @@
-import express, { Application } from 'express';
+import express, { Application, Request, Response } from 'express';
 import { AppDataSource } from './db/data-source';
 import routes from './routes/RoutesUser';
+import cors from "cors"
+import path from 'path';
 
 const app: Application = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use(cors({
+    origin: 'localhost:3000'
+}));
+
+app.use(express.static('public'));
+
+// Routes
+app.get('/', (req: Request, res: Response) => {
+    res.sendFile(path.join(__dirname, "../public/entrar.html"));
+});
 
 AppDataSource.initialize()
     .then(() => {

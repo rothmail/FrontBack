@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+
   const loginForm = document.getElementById("loginForm");         // Formulário de login
   const cadastroForm = document.getElementById("cadastroForm");   // Formulário de cadastro
   const formulario = document.getElementById("formulario");       // Div que contém o formulário
@@ -13,15 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault(); // Evita comportamento padrão do formulário
 
     const email = document.getElementById("email").value;
-    const senha = document.getElementById("senha").value;
+    const password = document.getElementById("senha").value;
 
     try {
-      const res = await fetch("http://localhost:3000/api/login", {
+      const res = await fetch("http://localhost:3000/api/usersLogin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({ nome, email, senha })
+        body: JSON.stringify({ email, password })
 
       });
 
@@ -48,23 +49,23 @@ document.addEventListener("DOMContentLoaded", function () {
   async function realizarCadastro(e) {
     e.preventDefault(); // Evita comportamento padrão
 
-    const nome = document.getElementById("nome").value;
+    const name = document.getElementById("nome").value;
     const email = document.getElementById("email").value;
-    const senha = document.getElementById("senha").value;
+    const password = document.getElementById("senha").value;
     const confirmar = document.getElementById("confirmar").value;
 
-    if (senha !== confirmar) {
+    if (password !== confirmar) {
       alert("As senhas não coincidem.");
       return;
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/register", {
+      const res = await fetch("http://localhost:3000/api/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({ nome, email, senha })
+        body: JSON.stringify({ name, email, password })
 
       });
 
@@ -108,4 +109,9 @@ document.addEventListener("DOMContentLoaded", function () {
       if (cadastroForm) cadastroForm.reset();
     });
   }
+});
+const som = document.getElementById('somPrincesa');
+document.addEventListener('click', () => {
+  som.muted = false;
+  som.play();
 });
