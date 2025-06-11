@@ -23,5 +23,13 @@
     "@types/node": "^24.0.0",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rothmail/FrontBack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rothmail/FrontBack/issues"
+  },
+  "homepage": "https://github.com/rothmail/FrontBack#readme"
 }
