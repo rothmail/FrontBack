@@ -5,15 +5,13 @@
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
-/* Fundo perolado suave */
+
 body {
   background-image: url('../img/62e58d1e89d9c67fcedb54c851b44381.jpg');
-  /* imagem da Barbie */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  /* Garante que o body tenha altura total da tela */
   margin: 0;
   font-family: 'Comic Sans MS', cursive, sans-serif;
   color: #d81b60;
@@ -30,14 +28,12 @@ body {
   width: 90%;
   max-width: 420px;
   border: 2px solid #a0bad8;
-  /* borda rosada suave */
 }
 
 h2 {
   margin-bottom: 18px;
   font-size: 28px;
   color: #6e85b7;
-  /* rosa queimado */
   font-weight: 700;
   font-family: 'Playfair Display', serif;
   text-align: center;
@@ -45,7 +41,7 @@ h2 {
   margin-top: 10px;
 }
 
-/* Labels com tom rosado escuro e leve espaçamento */
+
 label {
   display: block;
   margin-bottom: 8px;
@@ -55,7 +51,6 @@ label {
   letter-spacing: 0.03em;
 }
 
-/* Inputs com borda fina rosada, fundo pérola e bordas arredondadas */
 input {
   width: 100%;
   padding: 12px 14px;
@@ -69,19 +64,15 @@ input {
   outline: none;
 }
 
-/* Foco com sombra dourada suave e borda mais forte */
 input:focus {
   border-color: #6e88b7;
   box-shadow: 0 0 6px #9897c488;
 }
 
-/* Botão com fundo rosa queimado escuro, texto perolado e sombra delicada */
 button {
   width: 100%;
   background-color: #4d6aa9;
-  /* rosa queimado escuro */
   color: #f9f0f7;
-  /* quase branco perolado */
   padding: 14px;
   border: none;
   border-radius: 14px;
@@ -98,7 +89,6 @@ button:hover {
   background-color: #3f518a;
 }
 
-/* Rodapé com texto discreto e links em rosa queimado */
 .footer-text {
   text-align: center;
   margin-top: 26px;
@@ -119,7 +109,6 @@ button:hover {
   color: #8a3f53;
 }
 
-/* Mensagem de sucesso centralizada com estilo */
 .mensagem {
   display: none;
   text-align: center;
@@ -128,7 +117,6 @@ button:hover {
   font-size: 1.2rem;
 }
 
-/* Botão voltar */
 #voltarBtn {
   margin-top: 22px;
   background-color: #6e82b7;
@@ -156,7 +144,6 @@ button a #btn-backlogin {
   bottom: 20px;
   right: 20px;
   width: 200px;
-  /* aumente aqui conforme desejar */
   height: auto;
   z-index: 100;
   pointer-events: none;

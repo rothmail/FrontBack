@@ -1,4 +1,3 @@
-/* Estilo da tela principal com tema Barbie chique */
 body {
     margin: 0;
     padding: 0;
@@ -60,16 +59,15 @@ body {
     bottom: 20px;
     right: 20px;
     width: 200px;
-    /* aumente aqui conforme desejar */
     height: auto;
     z-index: 100;
     pointer-events: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 .imagem-topo {
-    width: 100px;        /* ou ajuste como quiser */
-    margin: 0 auto 20px; /* centraliza e dá espaçamento */
+    width: 100px;        
+    margin: 0 auto 20px; 
     display: block;
-    border-radius: 12px; /* opcional, para bordas arredondadas */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra suave */
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
