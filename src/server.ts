@@ -1,5 +1,5 @@
 import express, { Application, Request, Response } from 'express';
-import { AppDataSource } from './db/data-source';
+import AppDataSource from './db/data-source';
 import routes from './routes/RoutesUser';
 import cors from "cors"
 import path from 'path';
